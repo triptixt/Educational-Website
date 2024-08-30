@@ -1,0 +1,304 @@
+#index.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header">
+            <div class="container">
+                <div>
+                    <b>Educational Website</b>
+                    <br>
+                    <marquee>“E-learning opens doors to education that were previously closed, bridging gaps across continents and cultures"</marquee>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ0Z4fMC7PWtETBoIrGuaoOogLr3tA6HNlSA&s" class="logo" alt="Logo">
+                </div>
+            </div>
+            <div class="container">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Ask Questions</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="container">
+            <section class="intro">
+                <h1>Welcome to Our Educational Platform</h1>
+                <p>
+                    Our platform is designed to provide quality educational content to learners around the world. Whether you're looking to brush up on your skills or learn something new, we have something for everyone.
+                </p>
+                <a href="#" class="cta-button">Get Started</a>
+            </section>
+
+            <section class="features">
+                <h2>Features</h2>
+                <div class="feature-item">
+                    <h3>Interactive Courses</h3>
+                    <p>Engage with interactive lessons that make learning fun and effective.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from industry experts who bring real-world experience to the classroom.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Flexible Learning</h3>
+                    <p>Study at your own pace, from anywhere, at any time.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Educational Website. All rights reserved.</p>
+            <nav>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
+#style.css
+
+/* Resetting margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+.header {
+    background-color: #4CAF50;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header b {
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header marquee {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 5px;
+    display: block;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* 3D button effect */
+nav a:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Container for centralizing content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Main content styles */
+main {
+    padding: 40px 0;
+    background: linear-gradient(to bottom right, #4CAF50, #81C784);
+    color: #fff;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.intro p {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffeb3b;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FFC107;
+    transform: translateY(-3px);
+}
+
+/* Feature section styling */
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.feature-item {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.feature-item p {
+    line-height: 1.6;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: #ffeb3b;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header marquee {
+        margin: 10px 0;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-item {
+        margin-bottom: 20px;
+    }
+}
+
+
+
